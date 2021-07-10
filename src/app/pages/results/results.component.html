@@ -1,0 +1,19 @@
+<section class="banner-new-section">
+  <article class="text-banner">
+    <div class="text-banner-title">
+      <h1 class="text-banner-title-h1">Noticias al día</h1>
+      <p class="text-banner-title-p">
+        <strong>Bienvenido </strong>a su diario favorito
+      </p>
+      <br />
+      <p class="text-banner-title-p">
+        Contamos con un total de <span>{{ dataNews  }}</span> articulos, con mas de
+        <span>{{numberAutor}}</span> autores para mantenerte
+        <strong>informado.</strong>
+      </p>
+      <div class="watch-news">
+        <a class="nav-link" [routerLink]="['/news']" class="watch-news-a">Ver Noticias</a>
+      </div>
+    </div>
+  </article>
+</section>

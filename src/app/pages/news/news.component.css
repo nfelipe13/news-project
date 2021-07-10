@@ -1,0 +1,142 @@
+body {
+  background-color: #cdcdcd !important;
+}
+
+.div-filter-searchquery {
+  padding: 10px;
+  text-align: center;
+}
+
+.div-filter-searchquery-input {
+  border-radius: 7px;
+  font-size: 21px;
+  font-family: ui-monospace;
+  font-style: italic;
+  margin: 30px;
+  width: 30%;
+}
+
+.div-filter-searchquery-button {
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: ui-monospace;
+  font-style: italic;
+  padding: 2px;
+  width: 92px;
+  background: #d3d8d7;
+  color: black;
+  font-weight: bold;
+}
+
+.filtel-option {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.filtel-option-select {
+  background: white;
+  border-radius: 8px;
+  font-size: 23px;
+  font-style: italic;
+  font-family: ui-monospace;
+  height: 37px;
+  width: 300px;
+}
+
+.img-articles {
+  border-radius: 8px 8px 0px 0px;
+  height: 230px;
+  margin: 0 auto;
+  max-width: 35 0px;
+  padding: 0px 0px;
+  width: 100%;
+}
+
+.content-tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.title-td {
+  color: #00aae4;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: ui-monospace;
+  line-height: 21px;
+  min-height: initial;
+  margin: 20px 10px 15px 10px;
+  text-align: center;
+}
+.content-tbody-tr {
+  box-shadow: 0px 1px 5px 0 rgb(0 0 0 / 30%);
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+  margin: 10px;
+  text-align: center;
+  width: 350px;
+}
+
+.description-td {
+  color: #565656;
+  font-size: 16px;
+  font-family: ui-monospace;
+  line-height: 21px;
+  min-height: initial;
+  margin: 10px 18px;
+  text-align: center;
+}
+.description-td-span {
+  color: #565656;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: ui-monospace;
+  line-height: 21px;
+  min-height: initial;
+  margin: 15px 0px 10px 0px;
+  text-align: center;
+}
+
+.author-td {
+  color: #565656;
+  font-size: 16px;
+  font-family: ui-monospace;
+  line-height: 21px;
+  min-height: initial;
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.ver-mas-td {
+  background: #00c8ff;
+  margin-bottom: 0px;
+  padding: 10px;
+  position: absolute;
+  border-radius: 8px 10px 10px 0px;
+}
+
+.a-ver-mas-td {
+  color: white;
+  font-size: 20px;
+  font-family: ui-monospace;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 767px) {
+  .div-filter-searchquery-input {
+    margin: 30px 10px;
+    width: 70%;
+  }
+  .filtel-option {
+    flex-direction: column;
+    text-align: center;
+  }
+  .filter-option-div {
+    margin-bottom: 10px;
+  }
+}

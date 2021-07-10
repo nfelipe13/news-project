@@ -1,0 +1,83 @@
+
+  <section>
+    <div class="div-filter-searchquery">
+      <input
+        type="text"
+        placeholder="Buscar por palabra clave o frase"
+        [(ngModel)]="searchQuery"
+        class="div-filter-searchquery-input"
+      />
+      <button (click)="querySearch()" class="div-filter-searchquery-button">
+        Buscar
+      </button>
+    </div>
+  </section>
+
+  <section>
+    <div class="filtel-option">
+      <div class="filter-option-div">
+        <select
+          [(ngModel)]="searchCategory"
+          (change)="capturarCategory()"
+          class="filtel-option-select"
+        >
+          <option value="">Filtrar por Categoria</option>
+          <option *ngFor="let categorydato of datosCategory">
+            {{ categorydato }}
+          </option>
+        </select>
+      </div>
+      <div class="filter-option-div">
+        <select
+          [(ngModel)]="searchCountry"
+          (change)="capturarCountry()"
+          class="filtel-option-select"
+        >
+          <option value="">Filtrar por Pais</option>
+          <option *ngFor="let countrydato of datosCountry">
+            {{ countrydato }}
+          </option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <section>
+    <table>
+      <tbody class="content-tbody">
+        <tr *ngFor="let article of dataNews" class="content-tbody-tr">
+          <td class="img-td">
+            <img
+              src="{{ article.urlToImage }}"
+              *ngIf="article.urlToImage"
+              alt=""
+              class="img-articles"
+            />
+            <img
+              src="assets/img/sin_imagen_disponible.jpg"
+              *ngIf="!article.urlToImage"
+              alt=""
+              class="img-articles"
+            />
+          </td>
+          <td class="title-td">
+            {{ article.title ? article.title : "Sin titulo" }}
+          </td>
+
+          <td class="description-td">
+            <span class="description-td-span">Descripción: </span>
+            {{ article.description ? article.description : "Sin Descripción" }}
+          </td>
+          <td class="author-td">
+            <span class="description-td-span">Autor: </span>
+            {{ article.author ? article.author : "Autor desconocido" }}
+          </td>
+          <td class="ver-mas-td">
+            <a href="{{ article.url }}" target="_blank" class="a-ver-mas-td">
+              VER MÁS
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
